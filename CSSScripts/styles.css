@@ -9,26 +9,36 @@ header {
     padding: 10px 0;
 }
 
+nav {
+    text-align: center;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
+    color: #fff;
     font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Change font if desired */
+    background-color: #e6e6fa; /* Lavender color */
+    border-radius: 12px; /* Semi-curved corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #d3d3f2; /* Slightly darker lavender for hover effect */
+    color: #333; /* Change text color on hover */
 }
 
 h1 {
