@@ -7,6 +7,7 @@
     <meta name="keywords" content="Mystix, Mystix Stuidios, Animation, Game Design, Web Development, Artist, Website, Website creation, Web developers, web designer, web design, game developer, game design, animator, cartoon artist, digital artists, vfx artists, motion graphics, motion graphic artists, illustrators, graphic designers, programmers, programming, coders, coding professional">
     <title>Your Website Title</title>
     <link rel="stylesheet" href="../CSSScripts/styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../CSSScripts/home.css">
 </head>
 <body>
     <header>
@@ -31,6 +32,28 @@
                 With a diverse team of talented professionals, we specialize in a wide range of creative and technical services</p>
         </section>
         <!-- Add more sections as needed -->
+
+        <section id="specialities">
+            <h2>Our Expertise</h2> <!-- Section title -->
+            <div class="speciality-container">
+                <div class="speciality-item">
+                    <img src="../images/Anim04.png" alt="Animation">
+                    <button onclick="redirectToService('animation')">Animation</button>
+                </div>
+                <div class="speciality-item">
+                    <img src="../images/Game01.png" alt="Game Development">
+                    <button onclick="redirectToService('game-dev')">Game Development</button>
+                </div>
+                <div class="speciality-item">
+                    <img src="../images/GD02.png" alt="Graphic Design">
+                    <button onclick="redirectToService('graphic-design')">Graphic Design</button>
+                </div>
+                <div class="speciality-item">
+                    <img src="../images/Web01.png" alt="Web Development">
+                    <button onclick="redirectToService('web-dev')">Web Development</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -38,6 +61,6 @@
         <!-- Add footer content here -->
     </footer>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="../JavaScripts/script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

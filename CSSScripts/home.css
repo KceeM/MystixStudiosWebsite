@@ -1,0 +1,54 @@
+/* Section for Specialties */
+#specialities {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+#specialities h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.speciality-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between items */
+}
+
+.speciality-item {
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.speciality-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.speciality-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e6e6fa; /* Lavender color */
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.speciality-item:hover {
+    transform: scale(1.1); /* Zoom-out effect */
+}
+
+.speciality-item button:hover {
+    background-color: #d3d3f2; /* Slightly darker lavender for hover effect */
+}
+
+html {
+    scroll-behavior: smooth;
+}
