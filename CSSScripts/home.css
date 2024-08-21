@@ -1,3 +1,5 @@
+
+
 /* Section for Specialties */
 #specialities {
     text-align: center;
@@ -52,3 +54,93 @@
 html {
     scroll-behavior: smooth;
 }
+
+/*Section for text*/
+
+#welcome-section {
+    background-color: lavender; /* Light background */
+    padding: 20px;
+    text-align: center;
+}
+
+#cta-section {
+    
+    padding: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0); /* Ensure the text contrasts with the background */
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/*animations */
+
+#welcome-section, #mission-section, #cta-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+#welcome-section.visible, #mission-section.visible, #cta-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*video*/
+
+#content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Space between the video and mission content */
+}
+
+#video-container {
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the video container */
+}
+
+#video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners for the video */
+}
+
+#mission-section {
+    flex: 1;
+    max-width: 40%; /* Adjust the width of the mission section */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    background-color: white; /* Optional: background color */
+    border-radius: 10px; /* Optional: rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
+}
+
+@media (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #video-container,
+    #mission-section {
+        max-width: 100%;
+    }
+}
+
